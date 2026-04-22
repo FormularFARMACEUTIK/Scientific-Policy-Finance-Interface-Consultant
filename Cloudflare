@@ -1,0 +1,3 @@
+dig health.scientia-naturalis.org +short
+# or
+nslookup health.scientia-naturalis.org

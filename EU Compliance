@@ -4,7 +4,6 @@
   outline: 3px solid var(--color-secondary);
   outline-offset: 2px;
 }
-
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

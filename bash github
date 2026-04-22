@@ -1,0 +1,6 @@
+# In your GitHub repo: Settings → Pages
+✓ Source: "Deploy from a branch"
+✓ Branch: main (or master) → / (root) or /docs if using that folder
+✓ Theme: None (you're using custom CSS)
+✓ Custom domain: health.scientia-naturalis.org ✅ entered
+✓ Enforce HTTPS: ✅ enabled

@@ -1,0 +1,14 @@
+/* Add to your CSS or update in <style> */
+:root {
+  --container-max: 1400px; /* Increased from 1200px */
+}
+
+/* Better hero section padding */
+.hero-section {
+  padding: clamp(3rem, 8vw, 6rem) var(--space-md);
+}
+
+.hero-section .site-grid > div {
+  max-width: 900px; /* Better text readability */
+  margin: 0 auto;
+}

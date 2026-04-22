@@ -1,0 +1,28 @@
+<!-- Hero section: value proposition for high-stakes clients -->
+<section class="hero-section" aria-labelledby="hero-heading">
+  <div class="site-grid">
+    <div>
+      <h1 id="hero-heading">
+        High-Stakes Knowledge Arbitrage<br>
+        <span class="highlight">Health & Biotechnology Systems</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Strategic advisory at the intersection of scientific evidence, 
+        policy frameworks, and financial risk modeling — serving 
+        Banks, UN/EU Agencies, International NGOs, and Education Stakeholders.
+      </p>
+      
+      <div class="hero-credentials">
+        <span class="credential">NACE Q86 • Human Health Activities</span>
+        <span class="credential">NACE K65 • Insurance & Risk Modeling</span>
+        <span class="credential">EU Compliance Navigation</span>
+      </div>
+      
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Initiate Consultation</a>
+        <a href="/frameworks" class="btn btn-secondary">View Methodologies</a>
+      </div>
+    </div>
+  </div>
+</section>

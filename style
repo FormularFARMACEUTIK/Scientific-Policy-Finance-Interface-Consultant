@@ -20,3 +20,23 @@
   --color-text: #1a1a1a;
   --color-border: #dee2e6;
 }
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(244, 162, 97, 0.3);
+}
+
+.btn-primary:hover {
+  background: #e76f51; /* Slightly darker orange */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(244, 162, 97, 0.4);
+}

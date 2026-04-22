@@ -1,0 +1,7 @@
+/* Progressive enhancement example */
+@supports (grid-template-rows: subgrid) {
+  .advanced-dashboard {
+    grid-template-rows: subgrid;
+    /* Enhanced nested alignment for complex risk visualizations */
+  }
+}

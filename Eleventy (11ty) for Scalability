@@ -1,0 +1,22 @@
+// .eleventy.js - Minimal config for institutional site
+module.exports = function(eleventyConfig) {
+  // Passthrough static assets
+  eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("assets");
+  
+  // Add repository metadata filter
+  eleventyConfig.addFilter("repoLink", (repo) => {
+    return `https://github.com/yourorg/${repo}`;
+  });
+  
+  // NACE code formatter
+  eleventyConfig.addFilter("naceFormat", (codes) => {
+    return codes.map(c => `<span class="nace-badge">${c}</span>`).join(' ');
+  });
+  
+  return {
+    dir: { input: "src", output: "dist" },
+    htmlTemplateEngine: "njk"
+  };
+};

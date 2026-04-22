@@ -1,0 +1,23 @@
+# Pre-deployment audit (Lighthouse targets)
+performance:
+  - First Contentful Paint: < 1.2s
+  - Largest Contentful Paint: < 2.0s
+  - Cumulative Layout Shift: < 0.1
+  - Total Blocking Time: < 200ms
+
+accessibility:
+  - WCAG 2.2 AA: 100% pass rate
+  - Color contrast: ≥ 4.5:1 (text), ≥ 3:1 (UI)
+  - Keyboard navigation: fully operable
+  - ARIA landmarks: properly implemented
+
+seo:
+  - Structured data validated
+  - Mobile-friendly test: pass
+  - Canonical URLs: configured
+  - robots.txt: allow institutional crawlers
+
+security:
+  - HTTPS enforced (Cloudflare/GitHub Pages auto)
+  - CSP header (optional for static): default-src 'self'
+  - Subresource Integrity for external scripts

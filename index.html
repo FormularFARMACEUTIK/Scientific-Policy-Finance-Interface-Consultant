@@ -121,3 +121,84 @@
             <span class="credential">EU Compliance Navigation</span>
           </div>
           <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Initiate Consultation</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="services-grid" aria-labelledby="services-heading">
+      <h2 id="services-heading" style="grid-column:1/-1;margin-bottom:var(--space-sm)">Core Services</h2>
+      
+      <article class="service-card">
+        <h3>🏦 Institutional Risk Modeling</h3>
+        <p>Algorithmic frameworks for health insurance portfolios, Solvency II compliance, and cross-border risk assessment.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:auto">Request Framework</a>
+      </article>
+      
+      <article class="service-card">
+        <h3>🌍 EU Policy Navigation</h3>
+        <p>Strategic guidance through EU regulatory landscapes: MDR, IVDR, GDPR Article 35 DPIA, and Health Data Space.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:auto">Schedule Briefing</a>
+      </article>
+      
+      <article class="service-card">
+        <h3>🔬 Knowledge Arbitrage</h3>
+        <p>Translating scientific evidence into policy-ready insights and financially actionable intelligence for stakeholders.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:auto">Explore Methodology</a>
+      </article>
+    </section>
+    
+    <section id="projects" class="projects-grid" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" style="grid-column:1/-1;margin-bottom:var(--space-sm)">Reference Projects</h2>
+      
+      <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="project-header">
+          <h3 itemprop="name">EU Health Risk Framework</h3>
+          <span class="nace-badge">Q86 • K65</span>
+        </div>
+        <p itemprop="description">Cross-border health insurance risk modeling compliant with Solvency II and GDPR DPIA requirements.</p>
+        <div class="project-meta" style="font-size:0.875rem;color:#666;margin:0.5rem 0">
+          <span>Client: EU Agency</span> • <time datetime="2025-11">Nov 2025</time>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/FormularFARMACEUTIK/Scientific-Policy-Finance-Interface-Consultant" class="repo-link" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            Repository
+          </a>
+        </div>
+      </article>
+      
+      <!-- Add more project cards as needed -->
+    </section>
+    
+    <div class="compliance-banner">
+      <small>♿ WCAG 2.2 AA • EN 301 549 Aligned • GDPR Compliant • Accessibility Statement Available</small>
+    </div>
+    
+    <section id="contact" style="grid-area:contact;padding:var(--space-md);text-align:center">
+      <h2 style="margin-bottom:var(--space-sm)">Initiate Consultation</h2>
+      <p style="margin-bottom:var(--space-md);max-width:60ch;margin-left:auto;margin-right:auto">
+        For institutional inquiries regarding high-stakes knowledge arbitrage in health & biotechnology systems.
+      </p>
+      <a href="mailto:contact@scientia-naturalis.org" class="btn btn-primary">contact@scientia-naturalis.org</a>
+    </section>
+    
+  </main>
+  
+  <footer class="site-footer">
+    <p>© 2026 Scientia Naturalis Consulting • NACE Q86 • K65 • <a href="https://github.com/FormularFARMACEUTIK/Scientific-Policy-Finance-Interface-Consultant">View Repository</a></p>
+  </footer>
+  
+  <script>
+    // Minimal progressive enhancement: smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+      anchor.addEventListener('click',function(e){
+        const target=document.querySelector(this.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}
+      })
+    });
+  </script>
+</body>
+</html>

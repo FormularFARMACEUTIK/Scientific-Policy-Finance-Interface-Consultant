@@ -1,0 +1,25 @@
+<section id="projects" class="projects-grid" style="padding: var(--space-md); grid-column: 1 / -1;">
+  <h2 style="grid-column: 1 / -1; margin-bottom: var(--space-md); color: var(--color-primary);">Reference Projects</h2>
+  
+  <article class="project-card">
+    <div class="project-header">
+      <h3>EU Health Risk Modeling Framework</h3>
+      <span class="nace-badge">Q86 • K65</span>
+    </div>
+    <p>Algorithmic risk assessment for cross-border health insurance portfolios, compliant with Solvency II and GDPR Article 35 DPIA.</p>
+    <div class="project-meta" style="font-size: 0.875rem; color: #666; margin: 0.75rem 0;">
+      <span><strong>Client:</strong> EU Agency</span> • <time datetime="2025-11">Nov 2025</time>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/FormularFARMACEUTIK/Scientific-Policy-Finance-Interface-Consultant" 
+         class="btn btn-primary" 
+         target="_blank" 
+         rel="noopener"
+         style="padding: 0.5rem 1rem; font-size: 0.875rem;">
+        View Repository
+      </a>
+    </div>
+  </article>
+  
+  <!-- Add more project cards as needed -->
+</section>

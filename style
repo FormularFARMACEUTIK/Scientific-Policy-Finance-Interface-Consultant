@@ -12,3 +12,11 @@
   max-width: 900px; /* Better text readability */
   margin: 0 auto;
 }
+:root {
+  --color-primary: #0d3b66;      /* Deep institutional blue */
+  --color-secondary: #f4a261;    /* Warm accent (orange) */
+  --color-accent: #2a9d8f;       /* Teal for variety */
+  --color-neutral: #f8f9fa;
+  --color-text: #1a1a1a;
+  --color-border: #dee2e6;
+}

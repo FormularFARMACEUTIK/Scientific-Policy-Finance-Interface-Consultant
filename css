@@ -1,0 +1,95 @@
+/* === CORE GRID SYSTEM === */
+:root {
+  /* Fluid spacing scale */
+  --space-xs: clamp(0.5rem, 1vw, 1rem);
+  --space-sm: clamp(1rem, 2vw, 1.5rem);
+  --space-md: clamp(1.5rem, 3vw, 2.5rem);
+  --space-lg: clamp(2rem, 4vw, 4rem);
+  
+  /* Typography scale */
+  --text-base: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --text-h1: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+  
+  /* Color system - institutional palette */
+  --color-primary: #0d3b66;    /* EU Blue */
+  --color-secondary: #f4a261;  /* Biotech accent */
+  --color-neutral: #f8f9fa;
+  --color-text: #1a1a1a;
+  --color-border: #e9ecef;
+  
+  /* Layout constraints */
+  --container-max: 1200px;
+  --grid-gap: var(--space-sm);
+}
+
+/* === BASE GRID CONTAINER === */
+.site-grid {
+  display: grid;
+  grid-template-columns: [full-start] minmax(var(--space-md), 1fr) 
+                         [content-start] minmax(0, var(--container-max)) [content-end] 
+                         minmax(var(--space-md), 1fr) [full-end];
+  gap: var(--grid-gap);
+}
+
+.site-grid > * {
+  grid-column: content;
+}
+
+/* === RESPONSIVE GRID AREAS (Mobile-First) === */
+.layout-wrapper {
+  display: grid;
+  gap: var(--space-md);
+  grid-template-areas:
+    "header"
+    "hero"
+    "services"
+    "expertise"
+    "projects"
+    "compliance"
+    "contact"
+    "footer";
+}
+
+/* Tablet: 2-column layout */
+@media (min-width: 768px) {
+  .layout-wrapper {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "header header"
+      "hero hero"
+      "nav services"
+      "nav expertise"
+      "nav projects"
+      "compliance compliance"
+      "contact contact"
+      "footer footer";
+  }
+}
+
+/* Desktop: 3-column dashboard layout */
+@media (min-width: 1024px) {
+  .layout-wrapper {
+    grid-template-columns: 200px 1fr 280px;
+    grid-template-areas:
+      "header header header"
+      "nav hero sidebar"
+      "nav services sidebar"
+      "nav expertise sidebar"
+      "nav projects sidebar"
+      "compliance compliance compliance"
+      "contact contact contact"
+      "footer footer footer";
+  }
+}
+
+/* Named area assignments */
+.site-header { grid-area: header; }
+.site-nav { grid-area: nav; }
+.hero-section { grid-area: hero; }
+.services-grid { grid-area: services; }
+.expertise-panel { grid-area: expertise; }
+.projects-showcase { grid-area: projects; }
+.compliance-banner { grid-area: compliance; }
+.contact-cta { grid-area: contact; }
+.site-footer { grid-area: footer; }
+.sidebar-panel { grid-area: sidebar; }

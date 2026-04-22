@@ -81,7 +81,6 @@
       "footer footer footer";
   }
 }
-
 /* Named area assignments */
 .site-header { grid-area: header; }
 .site-nav { grid-area: nav; }

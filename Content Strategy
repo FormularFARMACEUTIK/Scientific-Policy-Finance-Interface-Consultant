@@ -1,0 +1,42 @@
+/* Institutional visual language */
+.hero-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #1a5276 100%);
+  color: white;
+  padding: var(--space-lg) var(--space-md);
+}
+
+.credential {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  margin: 0.25rem;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  min-height: 44px; /* Touch target size */
+}
+
+.btn-primary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+.btn-primary:hover { background: #e5944a; }
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  margin-left: var(--space-xs);
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }

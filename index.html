@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific-Policy-Finance Interface Consultant | High-Stakes Knowledge Arbitrage</title>
+  <meta name="description" content="High-stakes knowledge arbitrage advisory for health & biotechnology systems: risk modeling, EU compliance navigation, NACE Q86/K65 specialization."/>
+  <link rel="canonical" href="https://health.scientia-naturalis.org"/>
+  
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Scientia Naturalis Consulting",
+    "url": "https://health.scientia-naturalis.org",
+    "description": "High-Stakes Knowledge Arbitrage Advisor in Health & Biotechnology Systems",
+    "areaServed": ["EU", "UN", "International"],
+    "knowsAbout": ["Risk Modeling", "EU Compliance", "NACE Q86", "NACE K65", "Health Insurance Analytics"]
+  }
+  </script>
+  
+  <style>
+    /* === CSS RESET & BASE === */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:100%;scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fff}
+    img{max-width:100%;height:auto;display:block}
+    a{color:#0d3b66;text-decoration:none}
+    a:hover{text-decoration:underline}
+    
+    /* === CSS VARIABLES === */
+    :root{
+      --space-xs:clamp(0.5rem,1vw,1rem);
+      --space-sm:clamp(1rem,2vw,1.5rem);
+      --space-md:clamp(1.5rem,3vw,2.5rem);
+      --space-lg:clamp(2rem,4vw,4rem);
+      --text-base:clamp(1rem,0.9rem+0.5vw,1.125rem);
+      --text-h1:clamp(1.75rem,1.5rem+1.2vw,2.5rem);
+      --color-primary:#0d3b66;
+      --color-secondary:#f4a261;
+      --color-neutral:#f8f9fa;
+      --color-border:#e9ecef;
+      --container-max:1200px;
+    }
+    
+    /* === GRID LAYOUT === */
+    .site-grid{
+      display:grid;
+      grid-template-columns:[full-start]minmax(var(--space-md),1fr)[content-start]minmax(0,var(--container-max))[content-end]minmax(var(--space-md),1fr)[full-end];
+      gap:var(--space-sm);
+    }
+    .site-grid>*{grid-column:content}
+    
+    .layout-wrapper{
+      display:grid;
+      gap:var(--space-md);
+      grid-template-areas:"header""hero""services""expertise""projects""compliance""contact""footer";
+    }
+    @media(min-width:768px){.layout-wrapper{grid-template-columns:1fr 2fr;grid-template-areas:"header header""hero hero""nav services""nav expertise""nav projects""compliance compliance""contact contact""footer footer"}}
+    @media(min-width:1024px){.layout-wrapper{grid-template-columns:200px 1fr 280px;grid-template-areas:"header header header""nav hero sidebar""nav services sidebar""nav expertise sidebar""nav projects sidebar""compliance compliance compliance""contact contact contact""footer footer footer"}}
+    
+    /* === COMPONENTS === */
+    .site-header{grid-area:header;padding:var(--space-sm);border-bottom:1px solid var(--color-border);background:#fff;position:sticky;top:0;z-index:100}
+    .site-header h1{font-size:1.25rem;font-weight:700;color:var(--color-primary)}
+    
+    .hero-section{grid-area:hero;background:linear-gradient(135deg,var(--color-primary)0%,#1a5276 100%);color:#fff;padding:var(--space-lg)var(--space-md)}
+    .hero-section h1{font-size:var(--text-h1);margin-bottom:var(--space-sm)}
+    .hero-subtitle{font-size:1.125rem;opacity:0.95;margin-bottom:var(--space-md);max-width:65ch}
+    .hero-credentials{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:var(--space-md)}
+    .credential{background:rgba(255,255,255,0.15);padding:0.35rem 0.75rem;border-radius:100px;font-size:0.875rem;border:1px solid rgba(255,255,255,0.3)}
+    .hero-cta{display:flex;gap:var(--space-xs);flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:0.75rem 1.5rem;border-radius:6px;font-weight:600;min-height:44px;transition:all 0.2s}
+    .btn-primary{background:var(--color-secondary);color:var(--color-primary)}
+    .btn-primary:hover{background:#e5944a;text-decoration:none}
+    .btn-secondary{background:transparent;color:#fff;border:2px solid #fff;margin-left:var(--space-xs)}
+    .btn-secondary:hover{background:rgba(255,255,255,0.1);text-decoration:none}
+    
+    .services-grid{grid-area:services;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-md);padding:var(--space-md)}
+    .service-card{border:1px solid var(--color-border);border-radius:8px;padding:var(--space-sm);background:var(--color-neutral);display:flex;flex-direction:column}
+    .service-card h3{color:var(--color-primary);margin-bottom:0.5rem}
+    .service-card p{flex:1;margin-bottom:var(--space-sm)}
+    
+    .projects-grid{grid-area:projects;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:var(--space-md);padding:var(--space-md)}
+    .project-card{border:1px solid var(--color-border);border-radius:8px;padding:var(--space-sm);background:#fff}
+    .project-header{display:flex;justify-content:space-between;align-items:start;gap:var(--space-xs);margin-bottom:0.5rem}
+    .nace-badge{background:var(--color-primary);color:#fff;padding:0.25rem 0.5rem;border-radius:4px;font-size:0.875rem;font-weight:600;white-space:nowrap}
+    .project-links{display:flex;gap:var(--space-sm);margin-top:var(--space-xs);flex-wrap:wrap}
+    .repo-link{display:inline-flex;align-items:center;gap:0.25rem;color:var(--color-primary);font-weight:500}
+    
+    .compliance-banner{grid-area:compliance;background:var(--color-neutral);padding:var(--space-sm);text-align:center;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border)}
+    
+    .site-footer{grid-area:footer;padding:var(--space-md);text-align:center;color:#666;font-size:0.875rem;border-top:1px solid var(--color-border)}
+    
+    /* === ACCESSIBILITY === */
+    .skip-link{position:absolute;top:-40px;left:0;background:var(--color-primary);color:#fff;padding:0.5rem 1rem;z-index:100}
+    .skip-link:focus{top:0}
+    :focus-visible{outline:3px solid var(--color-secondary);outline-offset:2px}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms!important;transition-duration:0.01ms!important}}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div class="site-grid">
+      <h1>Scientia Naturalis</h1>
+    </div>
+  </header>
+  
+  <main id="main-content" class="layout-wrapper">
+    
+    <section class="hero-section">
+      <div class="site-grid">
+        <div>
+          <h1>High-Stakes Knowledge Arbitrage<br><span style="opacity:0.9">Health & Biotechnology Systems</span></h1>
+          <p class="hero-subtitle">Strategic advisory at the intersection of scientific evidence, policy frameworks, and financial risk modeling — serving Banks, UN/EU Agencies, International NGOs, and Education Stakeholders.</p>
+          <div class="hero-credentials">
+            <span class="credential">NACE Q86 • Human Health</span>
+            <span class="credential">NACE K65 • Insurance & Risk</span>
+            <span class="credential">EU Compliance Navigation</span>
+          </div>
+          <div class="hero-cta">

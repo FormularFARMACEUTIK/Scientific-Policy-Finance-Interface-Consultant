@@ -1,0 +1,39 @@
+<!-- projects.html snippet -->
+<section class="projects-showcase" aria-labelledby="projects-heading">
+  <h2 id="projects-heading">Reference Projects & Repositories</h2>
+  
+  <div class="projects-grid">
+    <!-- Project Card Template -->
+    <article class="project-card" itemscope itemtype="https://schema.org/CreativeWork">
+      <header class="project-header">
+        <h3 itemprop="name">EU Health Risk Modeling Framework</h3>
+        <span class="nace-badge" title="NACE Classification">Q86 • K65</span>
+      </header>
+      
+      <p itemprop="description">
+        Algorithmic risk assessment framework for cross-border health insurance portfolios, 
+        compliant with Solvency II and GDPR Article 35 DPIA requirements.
+      </p>
+      
+      <div class="project-meta">
+        <span class="client-tag">Client: EU Agency</span>
+        <time datetime="2025-11" itemprop="dateCreated">Nov 2025</time>
+      </div>
+      
+      <footer class="project-links">
+        <a href="https://github.com/yourorg/eu-health-risk-model" 
+           class="repo-link" 
+           itemprop="url"
+           target="_blank" 
+           rel="noopener noreferrer">
+          <svg aria-hidden="true"><!-- GitHub icon --></svg>
+          <span>View Repository</span>
+        </a>
+        <a href="/case-studies/eu-health-risk.html" class="case-study-link">
+          Case Study →
+        </a>
+      </footer>
+    </article>
+    <!-- Repeat for additional projects -->
+  </div>
+</section>

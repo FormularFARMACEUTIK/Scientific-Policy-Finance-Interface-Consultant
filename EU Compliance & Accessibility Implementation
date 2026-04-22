@@ -1,0 +1,45 @@
+<!-- document head: critical meta & accessibility -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="High-stakes knowledge arbitrage advisory for health & biotechnology systems: risk modeling, EU compliance navigation, NACE Q86/K65 specialization.">
+  
+  <!-- WCAG 2.2 AA Compliance -->
+  <meta name="color-scheme" content="light dark">
+  
+  <!-- Institutional SEO -->
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://health.scientia-naturalis.org">
+  
+  <!-- Schema.org structured data for Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Scientia Naturalis Consulting",
+    "url": "https://health.scientia-naturalis.org",
+    "description": "High-Stakes Knowledge Arbitrage Advisor in Health & Biotechnology Systems",
+    "areaServed": ["EU", "UN", "International"],
+    "knowsAbout": ["Risk Modeling", "EU Compliance", "NACE Q86", "NACE K65", "Health Insurance Analytics"],
+    "clientType": ["Banks", "UN Agencies", "EU Institutions", "International NGOs", "Education Sector"]
+  }
+  </script>
+  
+  <!-- Accessibility: Skip link -->
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- ... rest of content ... -->

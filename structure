@@ -1,0 +1,10 @@
+Scientific-Policy-Finance-Interface-Consultant/
+├── index.html          ← ✅ REQUIRED (the file above)
+├── README.md           ← Your repo description
+├── css/                ← Optional: move styles here later
+│   └── main.css
+├── projects/           ← Optional: individual project pages
+│   └── eu-health-risk.html
+└── .github/            ← Optional: GitHub Actions workflows
+    └── workflows/
+        └── deploy.yml
